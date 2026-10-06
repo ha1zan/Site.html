@@ -2,139 +2,151 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trail Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>routes</title>
 </head>
 <body>
-
-    <!-- Шапка / Заголовок -->
-    <h1 id="top">Trail Club</h1>
-    <p>Student hiking club . Classroom example</p>
-
-    <!-- Навигация -->
-    <p>
-        <a href="#home">Home</a> . 
-        <a href="#routes">Routes</a> . 
-        <a href="#apply">Apply for a trip</a>
-    </p>
-
+    <h1>Trail club</h1>
+    <p class="subtitle">Student hiking club · Classroom example</p>
+    <nav>
+        <a href="home.html">Home ·</a>
+        <a href="#">Routes ·</a>
+        <a href="apply.html">Apply for a trip</a>
+    </nav>
     <hr>
-
-    <!-- Хлебные крошки -->
-    <p><a href="#home">Home</a> &rarr; Routes</p>
-
-    <!-- Выбор маршрута -->
-    <h2>Choose Your Route</h2>
-    <p>
-        <a href="#comparison">Comparison</a> . 
-        <a href="#river-walk">River Walk</a> . 
-        <a href="#forest-trail">Forest Trail</a> . 
-        <a href="#ridge-view">Ridge View</a>
-    </p>
-
-    <!-- Сравнение маршрутов -->
+    <section>
+    <nav>
+        <a href="copy.html">Home →</a>
+        Routes
+    </nav>
+    </section>
+    <section>
+        <h2>Choose your route</h2>
+        <a href="#comparison">Comparison ·</a>
+        <a href="#river">River walk</a>
+        <a href="#forest">Forest Trail</a>
+        <a href="#ridge view">Ridge view</a>
+    </section>
     <h3 id="comparison">Route Comparison</h3>
-    <p>Sample routes &mdash; estimated classroom data</p>
 
-    <table border="1">
+      <p>Sample routes — estimated classroom data</p>
+
+      <table>
         <thead>
-            <tr>
-                <th rowspan="2">Route</th>
-                <th colspan="2">Trip details</th>
-                <th rowspan="2">Sample price</th>
-            </tr>
-            <tr>
-                <th>Distance</th>
-                <th>Duration</th>
-            </tr>
+          <tr>
+            <th>Route</th>
+            <th>Trip details</th>
+            <th>Sample price</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th>Distance</th>
+            <th>Duration</th>
+          </tr>
         </thead>
         <tbody>
-            <tr>
-                <td><a href="#river-walk">River Walk</a></td>
-                <td>4 km</td>
-                <td>2 hours</td>
-                <td>300 KGS</td>
-            </tr>
-            <tr>
-                <td><a href="#forest-trail">Forest Trail</a></td>
-                <td>7 km</td>
-                <td>4 hours</td>
-                <td>500 KGS</td>
-            </tr>
-            <tr>
-                <td><a href="#ridge-view">Ridge View</a></td>
-                <td>10 km</td>
-                <td>6 hours</td>
-                <td>700 KGS</td>
-            </tr>
+          <tr>
+            <td><a href="#river-walk">River Walk</a></td>
+            <td>4 km 2 hours</td>
+            <td>300 KGS</td>
+          </tr>
+          <tr>
+            <td><a href="#forest-trail">Forest Trail</a></td>
+            <td>7 km 4 hours</td>
+            <td>500 KGS</td>
+          </tr>
+          <tr>
+            <td><a href="#ridge-view">Ridge View</a></td>
+            <td>10 km 6 hours</td>
+            <td>700 KGS</td>
+          </tr>
         </tbody>
-    </table>
-    <p><small>Prices are fictional and used only for HTML practice.</small></p>
+      </table>
+      <p>Prices are fictional and used only for HTML practice.</p>
 
-    <!-- Маршрут 1: River Walk -->
-    <h3 id="river-walk">River Walk</h3>
-    <p>A short route beside the river.</p>
+      
+      <h3>River Walk</h3>
+      <p>A short route beside the river.</p>
 
-    <dl>
-        <dt>Meeting point</dt>
-        <dd>Student entrance</dd>
-        <dt>Group size</dt>
-        <dd>20 people</dd>
-    </dl>
-
-    <p>
-        Reserved places: 
-        <progress value="8" max="20"></progress> 
+      <p>
+        <strong>Meeting point</strong><br>
+        Student entrance<br>
+        <strong>Group size</strong><br>
+        20 people
+      </p>
+      <div>
+        <p>
+        <label for="progress">Reserved place</label>
+        <progress id="progress" value="4" max="10">8 / 20</progress>
         8 / 20
-    </p>
+        </p>
+      </div>
 
-    <details>
+      <details>
         <summary>What should I bring?</summary>
-        <p>Water, comfortable shoes, snacks.</p>
-    </details>
+        <ul>
+          <li>Water and snacks</li>
+          <li>Comfortable shoes</li>
+          <li>Rain jacket</li>
+        </ul>
+      </details>
 
-    <p><a href="#apply">Apply for this trip</a></p>
+        <a href="">Apply for this trip</a>
+      </p>
+      <h3>Forest Trail</h3>
+      <p>A longer walk with shaded sections.</p>
 
-    <!-- Маршрут 2: Forest Trail -->
-    <h3 id="forest-trail">Forest Trail</h3>
-    <p>A longer walk with shaded sections.</p>
-
-    <p>
-        Reserved places: 
-        <progress value="12" max="16"></progress> 
+      <div>
+        <p>
+        <label for="progress">Reserved place</label>
+        <progress id="progress" value="4" max="10"></progress>
         12 / 16
-    </p>
+        </p>
+      </div>
 
-    <details>
+      <details>
         <summary>Preparation checklist</summary>
-        <p>Hiking boots, hat, sunscreen.</p>
-    </details>
+        <ul>
+          <li>Check weather forecast</li>
+          <li>Bring enough water</li>
+          <li>Wear layered clothing</li>
+        </ul>
+      </details>
 
-    <p><a href="#apply">Apply for this trip</a></p>
+      <p>
+        <a href="">Apply for this trip</a>
+      </p>
 
-    <!-- Маршрут 3: Ridge View -->
-    <h3 id="ridge-view">Ridge View</h3>
-    <p>The longest route in this fictional club catalog.</p>
+      
+      <h3>Ridge View</h3>
+      <p>The longest route in this fictional club catalog.</p>
 
-    <p>
-        Reserved places: 
-        <progress value="6" max="12"></progress> 
+      <div>
+        <p>
+        <label for="progress">Reserved place</label>
+        <progress id="progress" value="4" max="8"></progress>
         6 / 12
-    </p>
+        </p>
+      </div>
 
-    <details>
+      <details>
         <summary>How is this route different?</summary>
-        <p>Steeper inclines, panoramic views.</p>
-    </details>
+        <p>It goes along the mountain ridge with panoramic views. Requires more stamina than the other two routes.</p>
+      </details>
 
-    <p><a href="#apply">Apply for this trip</a></p>
+      <p>
+        <a href="">Apply for this trip</a>
+      </p>
+    </section>
 
     <hr>
 
-    <!-- Подвал страницы -->
+    
     <footer>
-        <p>Trail Club . Fictional trips and prices for HTML practice</p>
-        <p><a href="#top">Back to top &uarr;</a></p>
+      <p>Trail Club · Fictional trips and prices for HTML practice</p>
+      <p><a href="#above">Back to top ↑</a></p>
     </footer>
 
+  </div>
 </body>
 </html>
